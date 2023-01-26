@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.09rem;
+}
+body {
+    padding: 5%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-weight: 700;
+    font-size: larger;
+    color: black;
+}
+.nav_item {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+.nav_item:hover, .active {
+    color: black;
+    border-bottom: 1px solid black ;
+}
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3%;
+    column-gap: 4%;
+    margin: 50px 0;
+}
+
+.portfolio_item {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio_img {
+    width: 100%;
+}
+.portfolio_url{
+    display: block;
+    color: white;
+}
+
+.hover_content {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    color: white;
+    padding: 20px;
+}
+.hover_content:hover {
+    opacity: 1;
+}
+.title {
+    margin-bottom: 10px;
+}
+.skills {
+    display: flex;
+}
+li {
+    margin-right: 10px;
+    font-size: small;
+}
+#sandraCami {
+    background-image: url("./assets/projects/project-4.jpg");
+}
+
+#ronald {
+    background-image: url("./assets/projects/ronald.png");
+    background-position: left;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width:768px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
